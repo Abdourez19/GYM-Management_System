@@ -1,0 +1,6 @@
+D:\Abou hadhoud PROGRAMMING\Additionnal Projects\GymManagemetSystem\Gym_DataAccess\bin\Release\Gym_DataAccess.dll
+D:\Abou hadhoud PROGRAMMING\Additionnal Projects\GymManagemetSystem\Gym_DataAccess\bin\Release\Gym_DataAccess.pdb
+D:\Abou hadhoud PROGRAMMING\Additionnal Projects\GymManagemetSystem\Gym_DataAccess\obj\Release\Gym_DataAccess.csproj.AssemblyReference.cache
+D:\Abou hadhoud PROGRAMMING\Additionnal Projects\GymManagemetSystem\Gym_DataAccess\obj\Release\Gym_DataAccess.csproj.CoreCompileInputs.cache
+D:\Abou hadhoud PROGRAMMING\Additionnal Projects\GymManagemetSystem\Gym_DataAccess\obj\Release\Gym_DataAccess.dll
+D:\Abou hadhoud PROGRAMMING\Additionnal Projects\GymManagemetSystem\Gym_DataAccess\obj\Release\Gym_DataAccess.pdb
