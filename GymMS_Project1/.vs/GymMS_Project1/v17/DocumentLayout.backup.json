@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\global\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:global\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs",
+              "RelativeToolTip": "Login\\frmLogin.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowEEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:30:59.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs [Design]",
+              "RelativeToolTip": "Login\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:46:43.251Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsGlobal.cs",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Global\\clsGlobal.cs",
+              "RelativeDocumentMoniker": "Global\\clsGlobal.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Global\\clsGlobal.cs",
+              "RelativeToolTip": "Global\\clsGlobal.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwI4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:25:26.735Z",
+              "EditorCaption": ""
             }
           ]
         }

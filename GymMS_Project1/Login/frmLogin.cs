@@ -60,10 +60,10 @@ namespace GymMS_Project1.Login
         {
             if (cbRememberMe.Checked)
             {
-                clsGlobal.RememberUsernameAndPassword(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                clsGlobal.SaveCredentialsToRegistry(txtUsername.Text.Trim(), txtPassword.Text.Trim());
             }
             else
-                clsGlobal.RememberUsernameAndPassword("", "");
+                clsGlobal.DeleteCredentialsFromRegistry();
 
 
 
@@ -81,7 +81,7 @@ namespace GymMS_Project1.Login
             lblIncorrectCredentials.Visible = false;
             string username = "", password = "";
 
-            if (clsGlobal.GetStoredCredential(ref username, ref password))
+            if (clsGlobal.GetStoredCredentialFromRegistry(ref username, ref password))
             {
                 txtUsername.Text = username;
                 txtPassword.Text = password;
