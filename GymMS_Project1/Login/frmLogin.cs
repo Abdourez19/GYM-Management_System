@@ -71,6 +71,7 @@ namespace GymMS_Project1.Login
             if (_IsUserFound(txtUsername.Text, txtPassword.Text))
             {
                 frmMain frm = new frmMain(this);
+                clsGlobal.LogUserToEventLog(_User);
                 frm.Show();
                 this.Hide();
             }

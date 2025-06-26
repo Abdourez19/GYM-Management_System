@@ -30,8 +30,6 @@ namespace Gym_Business
         public string Phone { get; set; }
         public string Address { get; set; }
 
-        //public bool IsActive { get; set; }
-
         private string _ImagePath;
         public string ImagePath
         {
@@ -75,7 +73,6 @@ namespace Gym_Business
             _Mode = enMode.Update;
         }
 
-
         private bool _AddNewPerson ()
         {
 
@@ -96,7 +93,6 @@ namespace Gym_Business
 
         }
 
-
         public static clsPerson FindByID (int PersonID)
         {
             string IDCardNumber = "", FirstName = "", MiddleName = "", LastName = "", Email = "",
@@ -113,7 +109,6 @@ namespace Gym_Business
             else
                 return null;
         }
-
         public static clsPerson FindByIDCardNumber(string IDCardNumber )
         {
             string FirstName = "", MiddleName = "", LastName = "", Email = "",
@@ -130,7 +125,6 @@ namespace Gym_Business
             else
                 return null;
         }
-
         public bool Save()
         {
             switch (_Mode)

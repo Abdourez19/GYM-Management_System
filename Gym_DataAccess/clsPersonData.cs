@@ -71,6 +71,7 @@ namespace Gym_DataAccess
                 Console.WriteLine($"ERROR FROM clsPeopleData.FindByID:" +
                     $" ***************** {e.Message} *****************");
                 //IsFound = false;
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -130,6 +131,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.FindByIDCardNumber" +
                     $"************************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -192,10 +194,11 @@ namespace Gym_DataAccess
                     }
                 }
             }
-            catch(Exception ex)
+            catch(Exception e)
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.AddNewPerson:" +
-                    $"*********** {ex.Message}************");
+                    $"*********** {e.Message}************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return PersonID;
@@ -263,10 +266,11 @@ namespace Gym_DataAccess
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.UpdatePerson: " +
-                    $"*********** {ex.Message}************");
+                    $"*********** {e.Message}************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
                 RowsAffected = -1;
             }
             return false;
@@ -303,10 +307,11 @@ namespace Gym_DataAccess
 
                 }
             }
-            catch(Exception ex)
+            catch(Exception e)
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.GetAllPeople:" +
-                    $"*****************{ex.Message} ************************");
+                    $"*****************{e.Message} ************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return dt;
         }
@@ -339,6 +344,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.IsPersonExists(int PersonID):" +
                     $" ********************{e.Message} ****************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return false;
@@ -372,6 +378,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.IsPersonExists(string IDCardNumber):" +
                     $" ********************{e.Message} ****************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return false;
@@ -401,6 +408,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPeopleData.DeletePerson:" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return false;
         }

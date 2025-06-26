@@ -46,6 +46,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainer.FindTrainerByID:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -101,6 +102,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainer.FindTrainerByID:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -140,6 +142,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainer.FindTrainerBySpecialty:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -178,6 +181,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainerData.GetTrainersList:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return dt;
         }
@@ -208,6 +212,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainerData.DeleteTrainer:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return false;
@@ -247,6 +252,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainerData.AddNewTrainer:" +
                    $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return TrainerID;
         }
@@ -287,14 +293,10 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsTrainerData.UpdateTrainer:" +
                    $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsUpdated;
         }
-
-
-
-
-
 
     }
 }

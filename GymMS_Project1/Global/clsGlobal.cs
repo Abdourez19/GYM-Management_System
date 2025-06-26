@@ -8,6 +8,8 @@ using System.Data;
 using System.IO;
 using System.Runtime.Remoting.Messaging;
 using Microsoft.Win32;
+using System.Diagnostics;
+using System.Drawing;
 
 namespace GymMS_Project1.Global
 {
@@ -170,6 +172,41 @@ namespace GymMS_Project1.Global
                 Console.WriteLine("ERROR: " + e.Message);
             }
             return false;
+        }
+        public static bool LogUserToEventLog (clsUser user)
+        {
+            if (user == null)
+                return false;
+
+            string SourceName = "GymMS_Project1";
+
+            if (!EventLog.SourceExists(SourceName))
+            {
+                EventLog.CreateEventSource(SourceName, "Application");
+                Console.WriteLine("Source created Successfully :-)");
+            }
+
+            string message = $"you have used \"Username: {user.Username}\" to Login";
+            EventLog.WriteEntry(SourceName, message, EventLogEntryType.Warning);
+            Console.WriteLine("Activity logged successfully to Windows Logs in Event Viewer!");
+
+            return true;
+        }
+
+        public static bool LogErrorsAndExceptionToWindowsLogs(string message)
+        {
+            string SourceName = "GymMS_Project1";
+
+            if (!EventLog.SourceExists(SourceName))
+            {
+                EventLog.CreateEventSource(SourceName, "Application");
+                Console.WriteLine("Source created Successfully :-)");
+            }
+
+            EventLog.WriteEntry(SourceName, message, EventLogEntryType.Error);
+            Console.WriteLine("An unexpected error occurred!");
+
+            return true;
         }
     }
 }

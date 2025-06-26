@@ -34,6 +34,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberData.GetMemberShipPlansCount:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return TotalMembershipPlans;
@@ -76,6 +77,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPlansData.FindPlanByID:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -105,6 +107,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPlansData.GetPlansList:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return dt;
         }
@@ -146,6 +149,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPlansData.GetPlanByDuration:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }

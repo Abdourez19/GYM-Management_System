@@ -35,6 +35,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberData.GetPackagesCount:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return TotalPakgesCount;
@@ -71,6 +72,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPackagesData.FindPackageByID:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -107,6 +109,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsPackagesData.FindPackageByName:" +
                     $" ***************** {e.Message} *****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -137,6 +140,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR from clsPackageData.GetPackagesList: " +
                     $"**********************{e.Message}***********************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return dt;
         }
@@ -170,6 +174,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsPackageData.AddNewPackage:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return AffectedRows;
@@ -205,6 +210,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsPackageData.UpdatePackage:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return false;
@@ -235,6 +241,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsPackageData.Delete:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return IsDeleted;

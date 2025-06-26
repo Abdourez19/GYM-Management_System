@@ -59,6 +59,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsMemberData.FindMember:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -103,6 +104,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsMemberData.FindMember:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsFound;
         }
@@ -133,6 +135,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberData.GetActiveMembersCount:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return TotalActiveMembers;
@@ -187,6 +190,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR from clsMembersData.GetMemberShipsList: " +
                     $"**********************{e.Message}***********************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return dt;
         }
@@ -239,6 +243,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberShipData.AddNewMembership:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return AffectedRows;
@@ -294,6 +299,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberShipData.UpdateMembership:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return IsUpdated;
@@ -325,6 +331,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberShipData.DeleteMembership:" +
                     $"********************{e.Message} *************************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return false;
         }
@@ -332,7 +339,7 @@ namespace Gym_DataAccess
         public static int PersonMembershipsCount( int PersonID)
         {
             int numberOfMemberships = 0;
-
+            
             try
             {
                 using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
@@ -357,6 +364,8 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine("ERROR: FROM clsMemberShipData.PersonMembershipsCount:" +
                     $"********************{e.Message} *************************");
+
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
 

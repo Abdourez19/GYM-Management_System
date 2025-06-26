@@ -328,12 +328,7 @@ namespace GymMS_Project1.Users
                 return;
 
 
-            if (clsUser.IsExists(txtUsername.Text.Trim()))
-            {
-                MessageBox.Show("Username Is Already used, Please enter new one", "Alert",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            
 
             _Add_UpdateUser();
 
@@ -341,6 +336,14 @@ namespace GymMS_Project1.Users
             switch (_Mode)
             {
                 case enMode.AddNew:
+
+                    if (clsUser.IsExists(txtUsername.Text.Trim()))
+                    {
+                        MessageBox.Show("Username Is Already used, Please enter new one", "Alert",
+                            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        return;
+                    }
+
                     if (_User.Save())
                     {
                         MessageBox.Show("User Added Successfully", "Information",

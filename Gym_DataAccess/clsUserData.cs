@@ -43,6 +43,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.Find(UserID):" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return IsFound;
@@ -82,6 +83,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.Find(Username, Password):" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return IsFound;
@@ -113,6 +115,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.IsUserExists(Username):" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsExists;
         }
@@ -143,8 +146,9 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.DeleteUser(UserID):" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
-            
+
             return IsDeleted;
         }
         public static DataTable GetUsersLIst ()
@@ -189,6 +193,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.IsUserExists(Username):" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return dt;
         }
@@ -225,6 +230,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.AddNew:" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
 
             return UserID;
@@ -264,6 +270,7 @@ namespace Gym_DataAccess
             {
                 Console.WriteLine($"ERROR FROM clsUserData.Update:" +
                     $" *****************{e.Message}*****************");
+                clsDataAccessSettings.LogErrorsAndExceptionToWindowsLogs(e.Message);
             }
             return IsUpdated;
         }
