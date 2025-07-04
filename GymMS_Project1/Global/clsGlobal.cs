@@ -10,6 +10,7 @@ using System.Runtime.Remoting.Messaging;
 using Microsoft.Win32;
 using System.Diagnostics;
 using System.Drawing;
+using System.Security.Cryptography;
 
 namespace GymMS_Project1.Global
 {
@@ -192,7 +193,6 @@ namespace GymMS_Project1.Global
 
             return true;
         }
-
         public static bool LogErrorsAndExceptionToWindowsLogs(string message)
         {
             string SourceName = "GymMS_Project1";
@@ -207,6 +207,17 @@ namespace GymMS_Project1.Global
             Console.WriteLine("An unexpected error occurred!");
 
             return true;
+        }
+
+        public static string ComputeHash(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] PwHashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                return BitConverter.ToString(PwHashBytes).Replace("-", "").ToLower();
+            }
+
         }
     }
 }

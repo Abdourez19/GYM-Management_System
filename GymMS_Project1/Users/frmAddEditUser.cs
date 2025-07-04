@@ -79,7 +79,7 @@ namespace GymMS_Project1.Users
         {
             _User.PersonID = _Person.PersonID;
             _User.Username = txtUsername.Text.Trim();
-            _User.Password = txtPassword.Text.Trim();
+            _User.Password = clsGlobal.ComputeHash(txtPassword.Text.Trim());
 
 
             int Permissions = Convert.ToInt32(cbDashboard.Tag.ToString());
@@ -196,7 +196,7 @@ namespace GymMS_Project1.Users
             }
 
             txtUsername.Text = _User.Username;
-            txtPassword.Text = _User.Password;
+            //txtPassword.Text = _User.Password;
             _SetCheckBoxPermissions(_User.Permissions);
             lblNote.Visible = false;
 
@@ -232,7 +232,7 @@ namespace GymMS_Project1.Users
             }
 
             txtUsername.Text = _User.Username;
-            txtPassword.Text = _User.Password;
+            //txtPassword.Text = _User.Password;
             _SetCheckBoxPermissions(_User.Permissions);
             pnlPermissions.Enabled = false;
             lblNote.Visible = true;

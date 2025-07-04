@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E91C9BA-B55D-4FDA-A280-36DC9D47C752}|..\\Gym_Business\\Gym_Business.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gym_business\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55B517D8-FA17-410F-80DA-1FB55F1A71FB}|..\\Gym_DataAccess\\Gym_DataAccess.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gym_dataaccess\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\users\\frmaddedituser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:users\\frmaddedituser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\users\\frmaddedituser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:users\\frmaddedituser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|d:\\abou hadhoud programming\\additionnal projects\\gymmanagemetsystem\\gymms_project1\\global\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC529FA-9490-4E77-9674-8E6CD8FE7D56}|GymMS_Project1.csproj|solutionrelative:global\\clsglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,8 +33,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\Gym_DataAccess\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\Gym_DataAccess\\clsDataAccessSettings.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\Gym_DataAccess\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\Gym_DataAccess\\clsDataAccessSettings.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T22:04:07.451Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -25,15 +58,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsPerson.cs",
-              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\Gym_Business\\clsPerson.cs",
-              "RelativeDocumentMoniker": "..\\Gym_Business\\clsPerson.cs",
-              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\Gym_Business\\clsPerson.cs",
-              "RelativeToolTip": "..\\Gym_Business\\clsPerson.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADwv0oAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmAddEditUser.cs",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Users\\frmAddEditUser.cs",
+              "RelativeDocumentMoniker": "Users\\frmAddEditUser.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Users\\frmAddEditUser.cs",
+              "RelativeToolTip": "Users\\frmAddEditUser.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwJ4BAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T14:42:55.869Z",
+              "WhenOpened": "2025-06-29T19:54:59.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmAddEditUser.cs [Design]",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Users\\frmAddEditUser.cs",
+              "RelativeDocumentMoniker": "Users\\frmAddEditUser.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Users\\frmAddEditUser.cs [Design]",
+              "RelativeToolTip": "Users\\frmAddEditUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:54:57.038Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs",
+              "RelativeToolTip": "Login\\frmLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:46:43.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\frmLogin.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Login\\frmLogin.cs [Design]",
+              "RelativeToolTip": "Login\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:46:41.182Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsGlobal.cs",
+              "DocumentMoniker": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Global\\clsGlobal.cs",
+              "RelativeDocumentMoniker": "Global\\clsGlobal.cs",
+              "ToolTip": "D:\\Abou hadhoud PROGRAMMING\\Additionnal Projects\\GymManagemetSystem\\GymMS_Project1\\Global\\clsGlobal.cs",
+              "RelativeToolTip": "Global\\clsGlobal.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAQwNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:44:54.461Z",
               "EditorCaption": ""
             }
           ]

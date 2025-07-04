@@ -5,15 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Diagnostics;
+using System.Configuration;
 
 
 namespace Gym_DataAccess
 {
     public class clsDataAccessSettings
     {
-        public static string ConnectionString = "server =.;database = GYM_MS_Project1;user id = sa; password = 123456";
+        //public static string ConnectionString = "server =.;database = GYM_MS_Project1;user id = sa; password = 123456";
+        public static string ConnectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
         /// <summary>
-        /// returns true if the error message logged successfully to Windows Logs, and returns false if failed.
+        /// returns true if the error message logged successfully to Windows Logs.
         /// Logs activity status in the console
         /// </summary>
         /// <param name="message">most Likely message sent from Exception</param>

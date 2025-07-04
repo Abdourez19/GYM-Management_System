@@ -66,9 +66,9 @@ namespace GymMS_Project1.Login
                 clsGlobal.DeleteCredentialsFromRegistry();
 
 
+            string HashedPW = clsGlobal.ComputeHash(txtPassword.Text.Trim());
 
-
-            if (_IsUserFound(txtUsername.Text, txtPassword.Text))
+            if (_IsUserFound(txtUsername.Text, HashedPW))
             {
                 frmMain frm = new frmMain(this);
                 clsGlobal.LogUserToEventLog(_User);
